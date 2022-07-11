@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: bisque;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(34, 156, 236);
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    border: 10px;        
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 20px 20px;
+    float: left;
+    display: block;
+    color: white;
+}
+
+nav ul li a:hover {
+    background: rgb(67, 189, 219);
+    border-radius: 60px 30px;
+    padding: 20px;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: aqua;
+    padding: 10px;
+}
+
+img {
+    border-radius: 60px 30px;
+    float: left;
+}
+
+.img2 {
+    border-radius: 30px;
+    float: left;
+}
+
+div {
+    border: 2px solid rgb(221, 11, 11);
+    background-color: rgb(27, 134, 206);
+    padding: 10px;
+    margin: 50px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+* { margin: 0; padding: 0; border-sizing: border-box ;}
+
+.content {
+    display: flex;
+    margin: auto;
+}
+
+.rTable{
+    width: 100%;
+    text-align: center;
+}
+.rTable thead {
+    background: rgb(40, 116, 216);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.rTable tbody tr:nth-child(2) {
+    background: #ccc;
+}
+
+.rTable tbody tr:nth-child(4) {
+    background: #ccc;
+}
+
+.rTable tbody tr:nth-child(6) {
+    background: #ccc;
+}
+.rTable th , .rTable td {
+    padding: 7px 0; 
+}
+
+@media screen and (max-width: 480px) {
+    .content{width: 94%;}
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+    color: brown;
+}
+
+
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: rgb(221, 128, 6);
+    max-width: 580px;    
+}
+
+input, textarea {
+    width: 500px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: blueviolet;
+    box-shadow: 5px 0px 10px blueviolet;
+    background-color: antiquewhite;
+    color: blue;
+    font-weight: bold;
+}
+
+.Enviar {
+    background-color: aqua;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 50px;
+    -moz-border-radius: 200px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+}
+
+form label {
+    margin-left: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width:600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}

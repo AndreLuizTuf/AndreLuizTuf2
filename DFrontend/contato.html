@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset='utf-8'> 
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'> 
+        <title>André Luiz</title> 
+        <meta name='viewport' content='width=device-width, initial-scale=1'> 
+        <link rel='stylesheet' type='text/css' media='screen' href='css/andre.css'> 
+        <script src='main.js'></script> 
+    </head> 
+   
+    <body> 
+        <header>
+            <h3>Curso WEB</h3>
+
+        </header>
+        <!-- Menu -->
+        <section>
+
+            <nav>
+                <ul>
+                <li><a href="index.html">Página</a></li> 
+                <li><a href="quemsomos.html">Quem somos</a></li> 
+                <li><a href="tabela.html">Tabela</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+        </section>
+        <!-- Contato-->
+        <section>
+            <form name="meu_forum" method="post" action="enviar.php">
+                <label for="name">Seu nome completo</label>
+                <input type="text" id="nomeid" placeholder="seun nome completo" required="required" name="nome">
+                
+                <label for="name">Seu Telefone</label>
+                <input type="tel" id="foneid" placeholder="DDD + seu telefone"  name="fone">
+
+                <label for="name">Seu e-mail</label>    
+                <input type="email" id="emailid" placeholder="Digite seu e-mail"  name="email">
+                
+
+                <textarea placeholder="Sua mensagem de texto"></textarea>
+
+                <input type="submit" class="Enviar" onclick="enviar();" value="Enviar" />
+
+
+            </form>
+        </section>
+    
+    </body> 
+    </html> 
